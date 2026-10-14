@@ -1,0 +1,35 @@
+{
+  "name": "orbital-defense",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Orbital Defense — an original space/alien tower defense web game.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "sim": "vite-node tools/simulate.ts",
+    "assets:optimize": "node tools/optimize-glb.mjs"
+  },
+  "dependencies": {
+    "howler": "^2.2.4",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.2.1",
+    "@gltf-transform/extensions": "^4.2.1",
+    "@gltf-transform/functions": "^4.2.1",
+    "@types/howler": "^2.2.12",
+    "@types/node": "^22.18.8",
+    "@types/three": "^0.180.0",
+    "draco3dgltf": "^1.5.7",
+    "playwright-core": "^1.55.1",
+    "sharp": "^0.34.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vite-node": "^3.2.4",
+    "vitest": "^3.2.4"
+  }
+}
